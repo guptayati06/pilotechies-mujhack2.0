@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fbf8f8] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="flex items-center bg-[#fbf8f8] p-4 pb-2 justify-between">
+        <div class="text-[#1b0e0e] flex size-12 shrink-0 items-center" data-icon="X" data-size="24px" data-weight="regular">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-[#1b0e0e] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Report disaster</h2>
+      </div>
+      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+        <label class="flex flex-col min-w-40 flex-1">
+          <div class="flex w-full flex-1 items-stretch rounded-xl">
+            <input
+              placeholder="Select type"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b0e0e] focus:outline-0 focus:ring-0 border-none bg-[#f3e8e8] focus:border-none h-14 placeholder:text-[#955050] p-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+              value=""
+            />
+            <div
+              class="text-[#955050] flex border-none bg-[#f3e8e8] items-center justify-center pr-4 rounded-r-xl border-l-0"
+              data-icon="ArrowDown"
+              data-size="24px"
+              data-weight="regular"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="@container flex flex-col h-full flex-1">
+        <div class="flex flex-1 flex-col @[480px]:px-4 @[480px]:py-3">
+          <div
+            class="bg-cover bg-center flex min-h-[320px] flex-1 flex-col justify-between px-4 pb-4 pt-5 @[480px]:rounded-xl @[480px]:px-8 @[480px]:pb-6 @[480px]:pt-8"
+            style='background-image: url("https://cdn.usegalileo.ai/maps/9916858f-19c6-4d24-ac1f-cb1a5394372c.png");'
+          >
+            <label class="flex flex-col min-w-40 h-12">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#955050] flex border-none bg-[#fbf8f8] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search location"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b0e0e] focus:outline-0 focus:ring-0 border-none bg-[#fbf8f8] focus:border-none h-full placeholder:text-[#955050] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex flex-col items-end gap-3">
+              <div class="flex flex-col gap-0.5">
+                <button class="flex size-10 items-center justify-center rounded-t-xl bg-[#fbf8f8] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                  <div class="text-[#1b0e0e]" data-icon="Plus" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <button class="flex size-10 items-center justify-center rounded-b-xl bg-[#fbf8f8] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                  <div class="text-[#1b0e0e]" data-icon="Minus" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <button class="flex size-10 items-center justify-center rounded-xl bg-[#fbf8f8] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                <div class="text-[#1b0e0e]" data-icon="NavigationArrow" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256" transform="scale(-1, 1)">
+                    <path
+                      d="M229.33,98.21,53.41,33l-.16-.05A16,16,0,0,0,32.9,53.25a1,1,0,0,0,.05.16L98.21,229.33A15.77,15.77,0,0,0,113.28,240h.3a15.77,15.77,0,0,0,15-11.29l23.56-76.56,76.56-23.56a16,16,0,0,0,.62-30.38ZM224,113.3l-76.56,23.56a16,16,0,0,0-10.58,10.58L113.3,224h0l-.06-.17L48,48l175.82,65.22.16.06Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+        <label class="flex flex-col min-w-40 flex-1">
+          <div class="flex w-full flex-1 items-stretch rounded-xl">
+            <input
+              placeholder="Date and time"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b0e0e] focus:outline-0 focus:ring-0 border-none bg-[#f3e8e8] focus:border-none h-14 placeholder:text-[#955050] p-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+              value=""
+            />
+            <div
+              class="text-[#955050] flex border-none bg-[#f3e8e8] items-center justify-center pr-4 rounded-r-xl border-l-0"
+              data-icon="Calendar"
+              data-size="24px"
+              data-weight="regular"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+        <label class="flex flex-col min-w-40 flex-1">
+          <textarea
+            placeholder="Description"
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b0e0e] focus:outline-0 focus:ring-0 border-none bg-[#f3e8e8] focus:border-none min-h-36 placeholder:text-[#955050] p-4 text-base font-normal leading-normal"
+          ></textarea>
+        </label>
+      </div>
+      <div class="flex w-full grow bg-[#fbf8f8] @container py-3">
+        <div class="w-full gap-1 overflow-hidden bg-[#fbf8f8] @[480px]:gap-2 aspect-[3/2] flex">
+          <div
+            class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+            style='background-image: url("https://cdn.usegalileo.ai/stability/fbaf6e3a-e8bf-4d78-84c1-bef5c2ee683f.png");'
+          ></div>
+        </div>
+      </div>
+      <div class="flex px-4 py-3">
+        <button
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-transparent text-[#1b0e0e] text-sm font-bold leading-normal tracking-[0.015em]"
+        >
+          <span class="truncate">Submit report</span>
+        </button>
+      </div>
+      <div class="h-5 bg-[#fbf8f8]"></div>
+    </div>
+  </body>
+</html>
